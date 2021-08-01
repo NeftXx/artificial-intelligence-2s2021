@@ -143,7 +143,6 @@ const test = () => {
   const actionResult = reflexAgent();
   $log.innerHTML += `<br />Location: ${locationVacuum.name}\t| Action: ${actionResult}\t| State: ${stateCurrent}`;
   const isMaximumCount = counters.every((count) => count >= 2);
-  console.log(isMaximumCount);
   if (isMaximumCount) {
     clearInterval(intervalTest);
     clearInterval(intervalDirty);
