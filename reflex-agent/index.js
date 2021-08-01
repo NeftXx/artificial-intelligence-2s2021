@@ -37,7 +37,7 @@ const $imgTrashB = $imgTrashA.cloneNode();
 
 const intervalTest = setInterval(() => {
   test();
-}, 3000);
+}, 2000);
 const intervalDirty = setInterval(() => {
   randomDirty();
 }, 6000);
