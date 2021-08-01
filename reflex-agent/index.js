@@ -149,3 +149,5 @@ const test = () => {
     clearInterval(intervalDirty);
   }
 };
+
+test();
