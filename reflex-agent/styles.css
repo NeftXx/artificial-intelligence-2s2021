@@ -1,0 +1,63 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.container {
+  width: 94vw;
+  height: 80vh;
+  margin: 10px;
+  display: grid;
+  grid-column-gap: 17px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.box-states img {
+  width: 100%;
+  height: auto;
+}
+
+.box-simulation {
+  display: grid;
+  grid-template-areas: 'locationA locationB'
+  'counters counters'
+  'log log';
+}
+
+#header h1 {
+  color: #111;
+  font-size: 36px;
+  line-height: 1.1;
+  font-weight: 600;
+}
+
+#info {
+  color: #777;
+  margin-top: 2px;
+  font-size: 12px;
+}
+
+#locationA {
+  grid-area: locationA;
+  border: 1px solid black;
+}
+
+#locationB {
+  grid-area: locationB;
+  border: 1px solid black;
+}
+
+#counters {
+  grid-area: counters;
+}
+
+#log-data {
+  grid-area: log;
+  overflow: auto;
+}
+
+#log {
+  text-align: justify;
+}
